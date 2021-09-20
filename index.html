@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🗄️</text></svg>"
+    />
+    <title>Sidebar Menu</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <nav class="nav">
+        <div>
+          <a href="#" class="nav__logo">
+            <img
+              class="nav__logo-icon"
+              alt="Brand Logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_example.svg"
+            />
+            <span class="nav__logo-name">Brand Name</span>
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+          <ul class="nav__list">
+            <a href="#" class="nav__link active">
+              <i class="bx bx-grid-alt nav__icon"></i>
+              <span class="nav__text">Home</span>
+            </a>
+            <a href="#" class="nav__link active">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__text">User</span>
+            </a>
+            <a href="#" class="nav__link active">
+              <i class="bx bx-bell nav__icon"></i>
+              <span class="nav__text">Notifications</span>
+            </a>
+            <a href="#" class="nav__link active">
+              <i class="bx bx-like nav__icon"></i>
+              <span class="nav__text">Likes</span>
+            </a>
+            <a href="#" class="nav__link active">
+              <i class="bx bx-bookmark nav__icon"></i>
+              <span class="nav__text">Favorites</span>
+            </a>
+            <a href="#" class="nav__link active">
+              <i class="bx bx-message nav__icon"></i>
+              <span class="nav__text">Messages</span>
+            </a>
+          </ul>
+        </div>
+        <a href="#" class="nav__link active">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__text">Log Out</span>
+        </a>
+      </nav>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
