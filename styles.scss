@@ -62,6 +62,24 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.credits {
+  position: absolute;
+  text-align: right;
+  top: 92vh;
+  width: calc(100vw - 114px);
+  font-weight: 700;
+
+  & a {
+    text-decoration: none;
+    color: var(--first-color);
+    transition: 0.25s;
+    &:hover,
+    &:active {
+      color: var(--second-color);
+    }
+  }
+}
+
 /* ########## NAV ########## */
 .sidebar {
   position: fixed;
