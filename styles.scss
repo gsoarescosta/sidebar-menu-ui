@@ -9,7 +9,7 @@ $font-bold: 700;
 /* === CSS === */
 :root {
   /* --- Colors --- */
-  --first-color: #2d090d;
+  --first-color: #180608;
   --second-color: #ffd100;
   --white-color: #ececec;
 
@@ -54,6 +54,14 @@ a {
   text-decoration: none;
 }
 
+.content {
+  transition: 0.5s;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
 /* ########## NAV ########## */
 .sidebar {
   position: fixed;
@@ -77,7 +85,7 @@ a {
   &__logo {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding: 0 0.25rem;
 
     &-icon {
@@ -134,11 +142,23 @@ a {
 }
 
 /* ########## SHOW MENU ########## */
-// width + 120px +/-
+.show {
+  width: $nav-width + 114px;
+}
 
 /* ########## ROTATE TOGGLE ########## */
-// rotate 90
+.rotate {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
 
-/* ########## ACTIVE LINKS MENU ########## */
+/* ##########  MENU ACTIVE COLOR ########## */
+.active {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
 
-/* ########## ADD PADDING BODY ########## */
+/* ########## ADD PADDING TO CONTENT ########## */
+.expander {
+  padding-left: 7rem;
+}

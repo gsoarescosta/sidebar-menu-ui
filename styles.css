@@ -5,7 +5,7 @@
 /* === CSS === */
 :root {
   /* --- Colors --- */
-  --first-color: #2d090d;
+  --first-color: #180608;
   --second-color: #ffd100;
   --white-color: #ececec;
   /* --- Typo --- */
@@ -52,6 +52,15 @@ a {
   text-decoration: none;
 }
 
+.content {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
 /* ########## NAV ########## */
 .sidebar {
   position: fixed;
@@ -88,7 +97,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding: 0 0.25rem;
 }
 
@@ -152,7 +161,26 @@ a {
 }
 
 /* ########## SHOW MENU ########## */
+.show {
+  width: 170px;
+}
+
 /* ########## ROTATE TOGGLE ########## */
-/* ########## ACTIVE LINKS MENU ########## */
-/* ########## ADD PADDING BODY ########## */
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* ##########  MENU ACTIVE COLOR ########## */
+.active {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+/* ########## ADD PADDING TO CONTENT ########## */
+.expander {
+  padding-left: 7rem;
+}
 /*# sourceMappingURL=styles.css.map */
